@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/posts/00/</loc>
+    <lastmod>2020-09-27T11:59:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-27T11:59:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-09-27T11:59:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/01/</loc>
+    <lastmod>2020-09-27T11:58:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/02/</loc>
+    <lastmod>2020-09-27T11:57:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/04/</loc>
+    <lastmod>2020-09-27T11:56:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/03/</loc>
+    <lastmod>2020-09-27T11:56:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/05/</loc>
+    <lastmod>2020-09-27T11:55:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/06/</loc>
+    <lastmod>2020-09-27T11:54:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head>
+	<meta name="generator" content="Hugo 0.74.3" />
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>LG Jamstack - LG Jamstack</title>
+<meta name="description" content="LG Jamstack tutorial!">
+
+<link rel="alternate" type="application/rss+xml" href="/index.xml" title="LG Jamstack" />
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="favicon.png">
+
+<link rel="stylesheet" href="css/light.css?rnd=1601260393" />
+<style>
+
+    [data-theme="dark"] {   
+        --font-color: #eee;
+--bg-color: #212121;
+
+--link-color:#599ada;
+--link-state-color:#ff5858;
+--link-state-border-color: rgba(238, 54, 54, 0.5);
+
+--thead-bg-color: #343a40;
+--table-border-color: lightgrey;
+
+--pre-color: #333;
+--pre-bg-color: #f1f1f1;
+
+--bq-color: #ccc;
+--hr-color: #333;
+
+--pagination-bg-color: #373737;
+--pagination-link-color: #b6b6b6;
+
+--post-info-color: grey;
+
+--switcher-color: #333;
+--switcher-bg-color: #fff;
+
+    }
+
+</style>
+
+<link rel="stylesheet" href="css/style.css?rnd=1601260393" />
+
+
+
+
+
+<meta property="og:title" content="LG Jamstack" />
+<meta property="og:description" content="LG Jamstack tutorial!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+<meta property="og:updated_time" content="2020-09-27T11:59:09-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="LG Jamstack"/>
+<meta name="twitter:description" content="LG Jamstack tutorial!"/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <h1 class="site-title">
+    <a href="/">LG Jamstack</a>
+</h1>
+
+    <nav>
+        
+        
+        <a class="" href="/posts/" title="Archive">Archive</a>
+        
+    </nav>
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    <div class="homepage-content">
+        
+    </div>
+
+    
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/00/">Installing Hugo</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Installation Let&rsquo;s get started with the JAMStack by building our very own static site. We&rsquo;ll be using Hugo, a static site generator (piece of software that turns the markdown into HTML to display), to create our site.
+This guide assumes a basic knowledge of the command line and HTML. We&rsquo;ll be interacting with our terminal for most of this tutorial, so you may want to read up on that if unfamiliar.
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/00/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/01/">The Skeleton 💀</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Generating the Skeleton Hugo requires a very specific structure for its generation. After installing Hugo, navigate to your desired directory and run hugo site new ./ in your command line. You&rsquo;ll get something like:
+. ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├── layouts ├── static └── themes as output.
+While we&rsquo;re here, I&rsquo;m also going to introduce the hugo server command. Run this at any time to properly preview your site at localhost:1313 (default port is 1313, may change if you have preconfigured Hugo another way).
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/01/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/02/">Adding a theme</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Adding a theme Hugo allows us to create our own themes, but that requires a knowledge of HTML and CSS and quite a bit of time. We&rsquo;ll go over how to tweak the theme a bit later on, but let&rsquo;s just use a premade one for now.
+We&rsquo;re going to be using the Anubis theme for our basic site today. This is a premade theme by Dmitry Kolosov - we&rsquo;ll be editing it and configuring it throughout the rest of this tutorial.
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/02/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/04/">Configuring a theme</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Theme Configuration Remember that config.yaml file that we edited in step 2? We&rsquo;ll be returning to that file to edit some features of the Anubis theme. Most themes have a GitHub repo that you can turn to for help with documentation and understanding what feature flags are available.
+The first thing we&rsquo;ll tweak is the title of our site. Open your config.yaml file, and change the:
+title: &#34;Anubis&#34; line to:
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/04/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/03/">Creating content</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Writing Content Every blog and website needs to have some content, so let&rsquo;s cover how to do that.
+Inside your Hugo folder, run hugo new posts/hello-world.md. This&rsquo;ll create a new folder called posts in your content directory, and put a file called hello-world.md in it.
+If you&rsquo;re not familiar with Markdown, it&rsquo;s a markup language that&rsquo;s commonly used to write and create rich content, and it&rsquo;s the language that Hugo uses.
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/03/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/05/">More on the structure</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Folder Structure Before we start finishing up our site, I&rsquo;m going to go more into detail about each of the folders you&rsquo;ll find, and what they do, so if you choose to edit your site more, you&rsquo;ll understand how to do so. If you&rsquo;re not interested in editing more, feel free to skip this page.
+Content Let&rsquo;s start with the content folder. You already know that this is where all your posts and markdown go, but you might not know that you can also put HTML in here.
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/05/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+        <article class="post-list">
+    <header class="post-header">
+        <h1 class="post-title"><a href="/posts/06/">Deploying</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Publishing You can&rsquo;t just upload the Hugo files as they are to GitHub or Netlify for them to show up - we have to use something called a build process. This takes all the files and puts them through Hugo to churn out the HTML and CSS that we need.
+This building is why we call Hugo a static site generator - it generates static sites which can go on a CDN instead of a more costly server.
+    </div>
+    
+        <div class="read-more">
+            <a href="/posts/06/">Read more</a>
+        </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+</article>
+    
+    
+
+
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Emilie Ma, 2020<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+    <script>
+    const STORAGE_KEY = 'user-color-scheme'
+    const defaultTheme = "auto"
+
+    let currentTheme
+    let switchButton
+    let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const autoChangeScheme = e => {
+        currentTheme = e.matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', currentTheme)
+        changeButtonText()
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        switchButton = document.querySelector('.theme-switcher')
+        currentTheme = detectCurrentScheme()
+        if (currentTheme == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+        if (currentTheme == 'auto') {
+            autoChangeScheme(autoDefinedScheme);
+            autoDefinedScheme.addListener(autoChangeScheme);
+        }
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    })
+
+    function detectCurrentScheme() {
+        if (localStorage.getItem(STORAGE_KEY)) {
+            return localStorage.getItem(STORAGE_KEY)
+        } 
+        if (defaultTheme) {
+            return defaultTheme
+        } 
+        if (!window.matchMedia) {
+            return 'light'
+        } 
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark'
+        }
+        return 'light'
+    }
+
+    function changeButtonText()
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+
+    function switchTheme(e) {
+        if (currentTheme == 'dark') {
+            localStorage.setItem(STORAGE_KEY, 'light')
+            document.documentElement.setAttribute('data-theme', 'light')
+            currentTheme = 'light'
+        } else {
+            localStorage.setItem(STORAGE_KEY, 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark')
+            currentTheme = 'dark'
+        }
+        changeButtonText()
+    }
+    </script>
+   
+    </div>
+</footer>
+
+        
+    </div>
+</body>
+</html>

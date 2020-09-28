@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Creating content - LG Jamstack</title>
+<meta name="description" content="LG Jamstack tutorial!">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="favicon.png">
+
+<link rel="stylesheet" href="css/light.css?rnd=1601260393" />
+<style>
+
+    [data-theme="dark"] {   
+        --font-color: #eee;
+--bg-color: #212121;
+
+--link-color:#599ada;
+--link-state-color:#ff5858;
+--link-state-border-color: rgba(238, 54, 54, 0.5);
+
+--thead-bg-color: #343a40;
+--table-border-color: lightgrey;
+
+--pre-color: #333;
+--pre-bg-color: #f1f1f1;
+
+--bq-color: #ccc;
+--hr-color: #333;
+
+--pagination-bg-color: #373737;
+--pagination-link-color: #b6b6b6;
+
+--post-info-color: grey;
+
+--switcher-color: #333;
+--switcher-bg-color: #fff;
+
+    }
+
+</style>
+
+<link rel="stylesheet" href="css/style.css?rnd=1601260393" />
+
+
+
+
+
+<meta property="og:title" content="Creating content" />
+<meta property="og:description" content="Writing Content Every blog and website needs to have some content, so let&rsquo;s cover how to do that.
+Inside your Hugo folder, run hugo new posts/hello-world.md. This&rsquo;ll create a new folder called posts in your content directory, and put a file called hello-world.md in it.
+If you&rsquo;re not familiar with Markdown, it&rsquo;s a markup language that&rsquo;s commonly used to write and create rich content, and it&rsquo;s the language that Hugo uses." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/03/" />
+<meta property="article:published_time" content="2020-09-27T11:56:09-07:00" />
+<meta property="article:modified_time" content="2020-09-27T11:56:09-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating content"/>
+<meta name="twitter:description" content="Writing Content Every blog and website needs to have some content, so let&rsquo;s cover how to do that.
+Inside your Hugo folder, run hugo new posts/hello-world.md. This&rsquo;ll create a new folder called posts in your content directory, and put a file called hello-world.md in it.
+If you&rsquo;re not familiar with Markdown, it&rsquo;s a markup language that&rsquo;s commonly used to write and create rich content, and it&rsquo;s the language that Hugo uses."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <h1 class="site-title">
+    <a href="/">LG Jamstack</a>
+</h1>
+
+    <nav>
+        
+        
+        <a class="" href="/posts/" title="Archive">Archive</a>
+        
+    </nav>
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+    
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">Creating content</h1>
+        </header>
+        <div class="content">
+            <h1 id="writing-content">Writing Content</h1>
+<p>Every blog and website needs to have some content, so let&rsquo;s cover how to do that.</p>
+<p>Inside your Hugo folder, run <code>hugo new posts/hello-world.md</code>. This&rsquo;ll create a new folder called posts in your content directory, and put a file called hello-world.md in it.</p>
+<p>If you&rsquo;re not familiar with Markdown, it&rsquo;s a markup language that&rsquo;s commonly used to write and create rich content, and it&rsquo;s the language that Hugo uses. It&rsquo;s not very complicated, but here are some main points:</p>
+<ul>
+<li><code>#</code> is a header, or H1 if you&rsquo;re familiar with HTML.</li>
+<li><code>##</code> is a subheader, or H2. These go all the way down to <code>######</code>, or H6.</li>
+<li>You write content just like you normally do. Space paragraphs out with a newline in between, and create a line break with two spaces.</li>
+<li>Add lists by prefixing items with <code>-</code> or <code>1.</code> <code>-</code> produces an unordered list, while <code>1.</code> creates an ordered list. (For the ordered list, prefix the next items with <code>2.</code>, <code>3.</code>, etc.)</li>
+<li>Add links by using the <code>[text](link)</code> syntax, and images with <code>![alt text](path to image)</code>.</li>
+<li>Add code by surrounding a block in three backticks ```, or inline with one `.</li>
+</ul>
+<p>More information can be found on this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">great cheatsheet by Adam Pritchard</a>.</p>
+<p>That being said, you&rsquo;ll notice that when editing the file that there&rsquo;s some information automatically added. Don&rsquo;t worry about that for now - that&rsquo;s <em>frontmatter</em>, or metadata, in other words. It controls some fine-tuning customizations we&rsquo;ll investigate soon.</p>
+<p>One example of this frontmatter is the line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">draft</span>: <span style="color:#66d9ef">true</span>
+</code></pre></div><p>which makes it so that <code>hugo server</code> won&rsquo;t actually build your files. Change this to:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">draft</span>: <span style="color:#66d9ef">false</span>
+</code></pre></div><p>so <code>hugo server</code> knows to build these files.</p>
+<p>For now, edit your hello-world.md file, and once done, try previewing your site with <code>hugo server</code>. Navigate to <code>localhost:1313/posts/hello-world/</code>, and it should appear!</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Emilie Ma, 2020<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+    <script>
+    const STORAGE_KEY = 'user-color-scheme'
+    const defaultTheme = "auto"
+
+    let currentTheme
+    let switchButton
+    let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const autoChangeScheme = e => {
+        currentTheme = e.matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', currentTheme)
+        changeButtonText()
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        switchButton = document.querySelector('.theme-switcher')
+        currentTheme = detectCurrentScheme()
+        if (currentTheme == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+        if (currentTheme == 'auto') {
+            autoChangeScheme(autoDefinedScheme);
+            autoDefinedScheme.addListener(autoChangeScheme);
+        }
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    })
+
+    function detectCurrentScheme() {
+        if (localStorage.getItem(STORAGE_KEY)) {
+            return localStorage.getItem(STORAGE_KEY)
+        } 
+        if (defaultTheme) {
+            return defaultTheme
+        } 
+        if (!window.matchMedia) {
+            return 'light'
+        } 
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark'
+        }
+        return 'light'
+    }
+
+    function changeButtonText()
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+
+    function switchTheme(e) {
+        if (currentTheme == 'dark') {
+            localStorage.setItem(STORAGE_KEY, 'light')
+            document.documentElement.setAttribute('data-theme', 'light')
+            currentTheme = 'light'
+        } else {
+            localStorage.setItem(STORAGE_KEY, 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark')
+            currentTheme = 'dark'
+        }
+        changeButtonText()
+    }
+    </script>
+   
+    </div>
+</footer>
+
+        
+    </div>
+</body>
+</html>

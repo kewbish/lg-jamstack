@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Installing Hugo - LG Jamstack</title>
+<meta name="description" content="LG Jamstack tutorial!">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="favicon.png">
+
+<link rel="stylesheet" href="css/light.css?rnd=1601260393" />
+<style>
+
+    [data-theme="dark"] {   
+        --font-color: #eee;
+--bg-color: #212121;
+
+--link-color:#599ada;
+--link-state-color:#ff5858;
+--link-state-border-color: rgba(238, 54, 54, 0.5);
+
+--thead-bg-color: #343a40;
+--table-border-color: lightgrey;
+
+--pre-color: #333;
+--pre-bg-color: #f1f1f1;
+
+--bq-color: #ccc;
+--hr-color: #333;
+
+--pagination-bg-color: #373737;
+--pagination-link-color: #b6b6b6;
+
+--post-info-color: grey;
+
+--switcher-color: #333;
+--switcher-bg-color: #fff;
+
+    }
+
+</style>
+
+<link rel="stylesheet" href="css/style.css?rnd=1601260393" />
+
+
+
+
+
+<meta property="og:title" content="Installing Hugo" />
+<meta property="og:description" content="Installation Let&rsquo;s get started with the JAMStack by building our very own static site. We&rsquo;ll be using Hugo, a static site generator (piece of software that turns the markdown into HTML to display), to create our site.
+This guide assumes a basic knowledge of the command line and HTML. We&rsquo;ll be interacting with our terminal for most of this tutorial, so you may want to read up on that if unfamiliar." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/00/" />
+<meta property="article:published_time" content="2020-09-27T11:59:09-07:00" />
+<meta property="article:modified_time" content="2020-09-27T11:59:09-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installing Hugo"/>
+<meta name="twitter:description" content="Installation Let&rsquo;s get started with the JAMStack by building our very own static site. We&rsquo;ll be using Hugo, a static site generator (piece of software that turns the markdown into HTML to display), to create our site.
+This guide assumes a basic knowledge of the command line and HTML. We&rsquo;ll be interacting with our terminal for most of this tutorial, so you may want to read up on that if unfamiliar."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <h1 class="site-title">
+    <a href="/">LG Jamstack</a>
+</h1>
+
+    <nav>
+        
+        
+        <a class="" href="/posts/" title="Archive">Archive</a>
+        
+    </nav>
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+    
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">Installing Hugo</h1>
+        </header>
+        <div class="content">
+            <h1 id="installation">Installation</h1>
+<p>Let&rsquo;s get started with the JAMStack by building our very own static site. We&rsquo;ll be using <a href="https://gohugo.io">Hugo</a>, a static site generator (piece of software that turns the markdown into HTML to display), to create our site.</p>
+<p>This guide assumes a basic knowledge of the command line and HTML. We&rsquo;ll be interacting with our terminal for most of this tutorial, so you may want to read up on that if unfamiliar.</p>
+<p>This guide also assumes you have git working on your system, and have a basic understanding of that. If not, navigate to <a href="https://git-scm.com">git-scm.com</a> and follow the installation instructions there.</p>
+<p>First, we&rsquo;ll have to install Hugo. Hugo is written in Go and provides binaries for most operating systems, so navigate to <a href="https://gohugo.io/getting-started/installing">https://gohugo.io/getting-started/installing</a> and follow the instructions to install.</p>
+<p>Some quick examples:</p>
+<ul>
+<li>On macOS or Linux with Homebrew:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install hugo
+</code></pre></div><ul>
+<li>On Windows with Chocolatey:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">choco install hugo -confirm
+</code></pre></div><ul>
+<li>On Ubuntu/Debian:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install hugo
+</code></pre></div><ul>
+<li>On Arch:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo pacman -Syu hugo
+</code></pre></div><p>If your OS isn&rsquo;t in the list above, it&rsquo;s likely in the <a href="https://gohugo.io/getting-started/installing">Hugo installing guide</a>.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-09-27</div>
+    
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Emilie Ma, 2020<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+    <script>
+    const STORAGE_KEY = 'user-color-scheme'
+    const defaultTheme = "auto"
+
+    let currentTheme
+    let switchButton
+    let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const autoChangeScheme = e => {
+        currentTheme = e.matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', currentTheme)
+        changeButtonText()
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        switchButton = document.querySelector('.theme-switcher')
+        currentTheme = detectCurrentScheme()
+        if (currentTheme == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+        if (currentTheme == 'auto') {
+            autoChangeScheme(autoDefinedScheme);
+            autoDefinedScheme.addListener(autoChangeScheme);
+        }
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    })
+
+    function detectCurrentScheme() {
+        if (localStorage.getItem(STORAGE_KEY)) {
+            return localStorage.getItem(STORAGE_KEY)
+        } 
+        if (defaultTheme) {
+            return defaultTheme
+        } 
+        if (!window.matchMedia) {
+            return 'light'
+        } 
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark'
+        }
+        return 'light'
+    }
+
+    function changeButtonText()
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+
+    function switchTheme(e) {
+        if (currentTheme == 'dark') {
+            localStorage.setItem(STORAGE_KEY, 'light')
+            document.documentElement.setAttribute('data-theme', 'light')
+            currentTheme = 'light'
+        } else {
+            localStorage.setItem(STORAGE_KEY, 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark')
+            currentTheme = 'dark'
+        }
+        changeButtonText()
+    }
+    </script>
+   
+    </div>
+</footer>
+
+        
+    </div>
+</body>
+</html>

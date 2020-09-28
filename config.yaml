@@ -1,0 +1,21 @@
+languageCode: "en-us"
+baseUrl: ""
+title: "LG Jamstack"
+theme: "anubis"
+paginate: 10
+publishDir: docs
+
+menu:
+  main:
+  - identifier: archive
+    name: Archive
+    title: Archive
+    url: /posts/
+    weight: 0
+
+params:
+  author: "Emilie Ma"
+  description: "LG Jamstack tutorial!"
+  dateFormat: "2006-01-02"
+  style: auto
+  readMore: true 
